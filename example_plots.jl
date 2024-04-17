@@ -1,3 +1,4 @@
+
 using JuMP, Gurobi, Plots
 
 ## PARAMETERS
@@ -67,7 +68,7 @@ for (ind_lambda, lambda) in enumerate(0:0.1:1.3)
 end
 
 x_range = range(0, 1.3, length = 14);
-plot(x_range, gap_1, xlabel="Value of Lambda", ylabel="Absolute Gap", label="Γ(b1)", 
+plot(x_range, gap_1, xlabel="Value of λ", ylabel="Absolute Gap", label="Γ(b1)", 
     linecolor=:yellowgreen, markershape=:circle, markercolor=:yellowgreen, markerstrokecolor=:yellowgreen, 
         markerstrokewidth=:2, linewidth=2, markersize=4)
 plot!(x_range, gap_2, label="Γ(b2)", linecolor=:purple, markershape=:xcross, markercolor=:purple, 
